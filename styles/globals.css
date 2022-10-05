@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -14,8 +18,20 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
+.bg-linear-default {
+  background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
+}
+.bg-linear-mute {
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+}
+.text-linear-mute {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +39,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
